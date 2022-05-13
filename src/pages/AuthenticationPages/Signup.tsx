@@ -48,7 +48,6 @@ const Signup = () => {
         .then(res => {
             if(res.data.status==='ok')
             {
-                //User created successfully, navigate to Login Page
                 notify("New user created successfully!")
                 navigate('/login')
             }

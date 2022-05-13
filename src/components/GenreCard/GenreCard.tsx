@@ -2,11 +2,9 @@ import {
     Button
 } from "@mui/material"
 
-type GenreCardProps = {
-    imgSrc: string
-    genreName: string
-    noOfQuizzesAvailable: number
-}
+import {
+    GenreCardProps
+} from "../../types/index"
 
 const GenreCard = ({imgSrc, genreName, noOfQuizzesAvailable}:GenreCardProps) => {
     return (
