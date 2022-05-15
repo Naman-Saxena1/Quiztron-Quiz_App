@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom" 
 import {
     Button
 } from "@mui/material"
-
 import {
     GenreCardProps
 } from "../../types/index"
 
 const GenreCard = ({imgSrc, genreName, noOfQuizzesAvailable}:GenreCardProps) => {
+    let genretype = genreName.toLowerCase()
+
     return (
         <div className="category-card">
             <img 
@@ -19,16 +21,18 @@ const GenreCard = ({imgSrc, genreName, noOfQuizzesAvailable}:GenreCardProps) => 
                     <h3>Genre : {genreName}</h3>
                     <p>Quizzes : {noOfQuizzesAvailable}</p>
                 </div>
-                <Button 
-                    variant="contained"
-                    sx={{
-                        bgcolor:'secondary.main',
-                        textTransform: 'none'
-                    }}
-                    disableElevation
-                >
-                    View Quizzes
-                </Button>
+                <Link to={`/genre/${genretype}`} state={{genre:genreName}} className='react-router-link-no-style'>
+                    <Button 
+                        variant="contained"
+                        sx={{
+                            bgcolor:'secondary.main',
+                            textTransform: 'none'
+                        }}
+                        disableElevation
+                    >
+                        View Quizzes
+                    </Button>
+                </Link>
             </div>
         </div>
     )

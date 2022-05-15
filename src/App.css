@@ -4,11 +4,14 @@
 {
   --pure-white: white;
   --dark-red-color: #860000;
+  --red-color: #ca0e1d;
+  --light-green-color: #00d09c;
   --blue-color: #0e7490;
   --royal-blue: #29517C;
   --bluish-light-grey-color: #F5F7F9;
   --bluish-background-color: #F3F3F3;
   --genre-card-hover-color: #acacac;
+  --background-color-dull-yellow: #e0e0d4;
 }
 
 html
@@ -18,6 +21,7 @@ html
 
 .App {
   text-align: center;
+  position: relative;
 }
 
 /* For all scrollbars */

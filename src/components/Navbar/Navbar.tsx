@@ -18,13 +18,13 @@ export function Navbar() {
   const dispatch = useAppDispatch()
 
   useEffect(()=>{
-    const token=localStorage.getItem('socioztron-user-token')
+    const token=localStorage.getItem('quiztron-user-token')
     if(token)
     {
       const user = jwt_decode(token)
       if(!user)
       {
-        localStorage.removeItem('socioztron-user-token')
+        localStorage.removeItem('quiztron-user-token')
         dispatch(setUserAsLoggedOut())
       }
       else
@@ -36,7 +36,7 @@ export function Navbar() {
 
   function logoutUser()
   {
-    localStorage.removeItem('socioztron-user-token')
+    localStorage.removeItem('quiztron-user-token')
     dispatch(setUserAsLoggedOut())
     localStorage.clear()
     notify("Logged out successfully!")
