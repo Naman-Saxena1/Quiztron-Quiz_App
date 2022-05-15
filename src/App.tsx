@@ -9,7 +9,9 @@ import {
 import { 
   Home,
   Login,
-  Signup
+  Signup,
+  GenreAllQuizzes,
+  QuizPage
 } from "./pages/index"
 import { 
   Navbar
@@ -35,7 +37,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: 'Comfortaa',
-  },
+  }
 })
 
 const notify = (toastMessageText:string) => toast(toastMessageText,{ position: toast.POSITION.BOTTOM_RIGHT});
@@ -49,7 +51,9 @@ function App() {
           <Routes>
             <Route path="/"         element={<Home/>} />
             <Route path="/login"    element={<Login/>} />
-            <Route path="/signup"    element={<Signup/>} />
+            <Route path="/signup"   element={<Signup/>} />
+            <Route path="/genre/:genretype"    element={<GenreAllQuizzes/>} />
+            <Route path="/quiz/:quizname"      element={<QuizPage/>} />
           </Routes>
         </div>
       </Router>

@@ -1,0 +1,14 @@
+.quiz-page
+{
+    width: 70%;
+    height: 270rem;
+    margin: auto;
+    padding-bottom: 28rem;
+}
+
+.quiz-cover-image
+{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}

@@ -3,3 +3,7 @@ export type GenreCardProps = {
     genreName: string
     noOfQuizzesAvailable: number
 }
+
+export type GenrePageLocationState = {
+    genre: string
+}

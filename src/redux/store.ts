@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit"
 import {
-    userLoginReducer
+    userLoginReducer,
+    allQuizzesReducer
 } from "../redux/index"
 
 export const store = configureStore({
     reducer: {
-        userLoginReducer: userLoginReducer
+        userLoginReducer: userLoginReducer,
+        allQuizzesReducer: allQuizzesReducer
     }
 })
 

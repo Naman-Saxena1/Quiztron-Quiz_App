@@ -2,6 +2,14 @@ import {
     Typography,
     Grid,
 } from "@mui/material"
+import axios from "axios"
+import { useEffect } from "react"
+import {
+    setAllQuizzesData
+} from "../../redux/index"
+import {
+    useAppDispatch
+} from "../../redux/hooks"
 import {
     GenreCard,
     Footer
@@ -9,6 +17,21 @@ import {
 import "./Home.css"
 
 const Home = () => {
+    const dispatch = useAppDispatch()
+
+    useEffect(()=>{
+        (async()=>{
+            let allQuizzesResponse = await axios.get(
+                "https://quiztron-app.herokuapp.com/api/home/allquizzes"
+            )
+            
+            if(allQuizzesResponse.data.status==="ok")
+            {
+                dispatch(setAllQuizzesData(allQuizzesResponse.data.allQuizzesData))
+            }
+        })()
+    },[])
+
     return (
         <div className="home-page">
             
@@ -29,7 +52,6 @@ const Home = () => {
 
             <Typography 
                 variant='h4'
-                className="home-page-"
             >
                 Categories
             </Typography>
