@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Full Stack Quiz App using MERN + Redux + TypeScript + Material UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Link - [Quiztron](https://quiztron-dev.netlify.app/)
 
 ## Available Scripts
 
@@ -9,38 +9,59 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies used 
+1. HTML
+2. CSS
+3. TypeScript
+4. Material UI + React Toastify
+5. React
+6. Redux Toolkit
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node JS, Express JS and MongoDb is used for Backend server which is deployed on Heroku and MongoDb Atlas.
 
-### `npm run build`
+## Features:
+1. User Authentication (Signup, Login and Logout)
+2. Home Page
+3. Quizzes by Category
+4. Rules for attempting Quiz
+5. MCQ based Quiz Question Page
+6. Results with Answers & Score
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## You are welcome to contribute to this project 
+1. Create a personal fork of the project on Github.
+2. Clone the fork on your local machine. Your remote repo on Github is called origin.
+3. Add the original repository as a remote called upstream.
+4. If you created your fork a while ago be sure to pull upstream changes into your local repository.
+5. Create a new branch to work on! Branch from development branch.
+6. Implement/fix your feature, comment your code.
+7. Squash your commits into a single commit with git's interactive rebase. Create a new branch if necessary.
+8. Push your branch to your fork on Github, the remote origin.
+9. From your fork open a pull request in the correct branch. Target the project's development branch.
+10. Once the pull request is approved and merged you can pull the changes from upstream to your local repo and delete your extra branch(es).
+11. And last but not least: Always write your commit messages in the present tense. Your commit message should describe what the commit, when applied, does to the code – not what you did to the code.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## You can report issues on this project using Github issue 
+1. You can read more about this from [Github Docs](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Screenshots
 
-### `npm run eject`
+### User Authentication Pages
+![](https://github.com/Naman-Saxena1/Quiztron-Quiz_App/blob/development/src/assets/Screenshots/SignupPage.PNG)
+![](https://github.com/Naman-Saxena1/Quiztron-Quiz_App/blob/development/src/assets/Screenshots/LoginPage.PNG)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Home Page
+![](https://github.com/Naman-Saxena1/Quiztron-Quiz_App/blob/development/src/assets/Screenshots/HomePage1.PNG)
+![](https://github.com/Naman-Saxena1/Quiztron-Quiz_App/blob/development/src/assets/Screenshots/HomePage2.PNG)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Individual Genre Page
+![](https://github.com/Naman-Saxena1/Quiztron-Quiz_App/blob/development/src/assets/Screenshots/GenrePage.PNG)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Rules, Quiz and Results
+![](https://github.com/Naman-Saxena1/Quiztron-Quiz_App/blob/development/src/assets/Screenshots/Rules.PNG)
+![](https://github.com/Naman-Saxena1/Quiztron-Quiz_App/blob/development/src/assets/Screenshots/QuizResults1.PNG)
+![](https://github.com/Naman-Saxena1/Quiztron-Quiz_App/blob/development/src/assets/Screenshots/QuizResults2.PNG)
