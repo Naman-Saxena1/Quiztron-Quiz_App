@@ -3,7 +3,6 @@
     position: absolute;
     left: 0;
     width: 100%;
-    min-width: 500px;
     height: 100%;
     z-index: 7;
     overflow: auto;
@@ -17,7 +16,6 @@
 
 .quiz-rules-container
 {
-    width: 30rem;
     border-radius: 8px;
     background-color: var(--pure-white);
     display: flex;
