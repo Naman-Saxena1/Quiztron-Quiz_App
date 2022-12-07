@@ -40,7 +40,7 @@ const Login = () => {
     {
         event.preventDefault();
         axios.post(
-            "https://quiztron-app.herokuapp.com/api/login",
+            "https://quiztron-server.vercel.app/api/login",
             {
                 userEmail,
                 userPassword

@@ -38,7 +38,7 @@ const Signup = () => {
     {
         event.preventDefault();
         axios.post(
-            "https://quiztron-app.herokuapp.com/api/signup",
+            "https://quiztron-server.vercel.app/api/signup",
             {
                 newUserName: `${newUserName}`,
                 newUserEmail: `${newUserEmail}`,

@@ -27,7 +27,7 @@ const GenreAllQuizzes = () => {
     useEffect(()=>{
         (async()=>{
             let allQuizzesResponse = await axios.get(
-                "https://quiztron-app.herokuapp.com/api/home/allquizzes"
+                "https://quiztron-server.vercel.app/api/home/allquizzes"
             )
             
             if(allQuizzesResponse.data.status==="ok")
